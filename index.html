@@ -15,10 +15,12 @@
 </head>
 <body>
     <div class="card">
-      <img src="images/image-qr-code.png" alt="" >
+     <div id="qrcode">
+      <img  src="images/qrcode.png" alt="" >
+     </div>
       <div class="card-body">
-        <h4>Improve your front-end skills by building projects </h4>
-        <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level 
+        <h4>Build your Website with Freelancer Nizam </h4>
+        <p>Scan the QR code to visit Freelancer Nizam and take any services as you need.
         </p>
       </div>
       <div class="attribution">
@@ -28,6 +30,14 @@
     </div>
  
   
-  
+    <script> 
+      // Generate the QR code using qrcode.js 
+      var qrCodeDiv = document.getElementById("qrcode"); 
+      var qrCode = new QRCode(qrCodeDiv, { 
+          text: "https://www.nizam2020.com", 
+          width: 200, 
+          height: 200, 
+      }); 
+  </script> 
 </body>
 </html>
